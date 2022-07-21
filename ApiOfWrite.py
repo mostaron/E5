@@ -148,6 +148,7 @@ def teamWrite(a,channelname):
     url=r'https://graph.microsoft.com/v1.0/me/joinedTeams'
     print("    获取team")
     jsontxt = json.loads(apiReq('get',a,url))
+    print("    获取的team信息：", jsontxt)
     objectlist=jsontxt['value']
     #创建
     print("    创建team频道")
